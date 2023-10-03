@@ -11,7 +11,7 @@ const HttpError = require('./models/http-error');
 
 const app = express();
 
-app.use(bodyParser.json());   // parse request body. will call next() in it
+app.use(bodyParser.json());   // parse request body. Will call next() in it
 
 app.use('/uploads/images', express.static(path.join('uploads', 'images')));
 

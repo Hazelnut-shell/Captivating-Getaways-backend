@@ -7,10 +7,10 @@ const API_KEY = process.env.GOOGLE_APIKEY;
 // convert address to latitude and longitude, using google api
 // temporarily return dummy data, to avoid cost
 async function getCoordsForAddress(address) {
-  return {
-    lat: 41.7948,
-    lng: -87.5907
-  };
+  // return {
+  //   lat: 41.7948,
+  //   lng: -87.5907
+  // };
   const response = await axios.get(
     `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
       address
